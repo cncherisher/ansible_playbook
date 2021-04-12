@@ -1,0 +1,6 @@
+- hosts: win 
+  tasks: 
+   - name: Stop service 
+     win_service:
+       name: sysmain
+       state: stopped
