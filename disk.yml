@@ -1,4 +1,4 @@
-- hosts: win 
+- hosts: {{ dsthosts }}
   tasks: 
   - name: Get disk facts
     win_disk_facts:
