@@ -1,0 +1,6 @@
+- hosts: win 
+  tasks:
+   - name: Remove Internet Explorer Logs
+     win_eventlog:
+      name: Internet Explorer
+      state: absent
