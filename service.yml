@@ -1,4 +1,4 @@
-- hosts: {{ dsthosts }}
+- hosts: win
   tasks: 
    - name: Stop service 
      win_service:

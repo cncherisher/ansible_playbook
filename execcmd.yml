@@ -1,10 +1,9 @@
-- hosts: "{{ dsthosts }}"
-  remote_user: root
+- hosts: win
   vars:
     # 应用服务器发版的主机,等待传参
     dsthosts: 192.168.156.71
     # 执行的命令等待传参
-    cmds: "ls"
+    cmds: "dir"
   tasks:
   - name: execcmds        | 执行命令
     shell: "{{ cmds }}"
