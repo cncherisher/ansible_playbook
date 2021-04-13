@@ -1,0 +1,5 @@
+- hosts: win
+  tasks:
+  - name: Turn off computers
+#    raw: Stop-Computer –computer {{ ansible_hostname }} –Credential ictadmin
+    raw: shutdown /s /hybrid /t 15 /c "We are turning your computers off after maintenance"

@@ -1,0 +1,5 @@
+- hosts: win
+  gather_facts: no
+  tasks:
+  - win_reboot:
+  - wait_for_connection:
